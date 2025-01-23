@@ -26,8 +26,8 @@ module.exports = {
     open: true, // Автоматически открывает браузер
     historyApiFallback: {
       rewrites: [
-        { from: /^\/main.html$/, to: '/main.html' },
-        { from: /^\/$/, to: '/main.html' },
+        { from: /^\/index.html$/, to: '/index.html' },
+        { from: /^\/$/, to: '/index.html' },
         { from: /^\/pages\/order.html$/, to: '/pages/order.html' },
         { from: /^\/pages\/about.html$/, to: '/pages/about.html' },
         { from: /^\/pages\/contact.html$/, to: '/pages/contact.html' },
@@ -68,8 +68,8 @@ module.exports = {
   plugins: [
     // Главные страницы
     new HtmlWebpackPlugin({
-      filename: 'main.html',
-      template: './main.html', // Главная страница
+      filename: 'index.html',
+      template: './index.html', // Главная страница
       chunks: ['main', 'header', 'slider'], // Связывает с main.js и header.js
     }),
     new HtmlWebpackPlugin({
