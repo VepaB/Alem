@@ -1,0 +1,1 @@
+document.getElementById("contact-form").addEventListener("submit",(function(e){e.preventDefault();const t=document.getElementById("name").value,n=document.getElementById("email").value,m=document.getElementById("message").value;t&&n&&m?(alert(`Спасибо, ${t}! Ваше сообщение отправлено.`),document.getElementById("contact-form").reset()):alert("Пожалуйста, заполните все поля.")}));

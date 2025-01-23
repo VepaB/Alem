@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;700&display=swap');
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select, .form-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .form-button {
+    background-color: #1A4F8B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  .fullname-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .fullname-group input {
+    flex: 1;
+  }
+  
+  #success-message {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Окно фиксируется на экране */
+    top: 50%; /* Расположение по центру */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Фон */
+    padding: 20px; /* Отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    z-index: 1000; /* Поверх всех остальных элементов */
+    border-radius: 10px; /* Закругленные углы */
+    text-align: center; /* Центрирование текста */
+    font-family: 'Vollkorn SC', serif; /* Шрифт */
+    font-weight: bold; /* Жирный текст */
+  }
+  #overlay {
+    display: none; /* Скрыт по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный фон */
+    z-index: 999; /* Ниже окна, но выше страницы */
+  }
+
+  #close-button {
+    margin-top: 20px; /* Отступ сверху */
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 550px; /* Ширина кнопки */
+  }
+  
+  #close-button:hover {
+    background-color: #1A4F8B;
+  }
