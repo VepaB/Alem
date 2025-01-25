@@ -188,7 +188,7 @@ h3 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 1100; /* Ensure popup is above sidebar */
     transition: opacity 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     visibility: hidden;
@@ -791,4 +791,10 @@ body {
     font-size: 0.9em; /* Smaller font size for mobile */
   }
 
+}
+
+/* Sidebar */
+.sidebar {
+  /* ...existing styles... */
+  z-index: 1000; /* Ensure sidebar is above other content */
 }

@@ -94,3 +94,29 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
     behavior: 'smooth'
   });
 });
+
+// Function to handle visibility change
+function handleVisibilityChange() {
+    if (document.hidden) {
+        // Stop the automatic slide timer
+        stopSlideTimer();
+    } else {
+        // Resume the automatic slide timer
+        startSlideTimer();
+    }
+}
+
+// Attach visibility change event listener
+document.addEventListener("visibilitychange", handleVisibilityChange);
+
+// Function to stop the automatic slide timer
+function stopSlideTimer() {
+    // Implementation to stop the slide timer
+    console.log("Slide timer stopped.");
+}
+
+// Function to start the automatic slide timer
+function startSlideTimer() {
+    // Implementation to start the slide timer
+    console.log("Slide timer resumed.");
+}
